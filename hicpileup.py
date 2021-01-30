@@ -35,10 +35,6 @@ def parse_args():
                         required=True)
     parser.add_argument("-t", "--threads", help="threads for processing pool",
                         required=False, default=5, type=int)
-    parser.add_argument("-nr", "--nrows", help="number of rows for the plot grid",
-                        required=False, default=1, type=int)
-    parser.add_argument("-nc", "--ncols", help="number of colums for the plot grid",
-                        required=False, default=1, type=int)
     return parser.parse_args()
 
 
