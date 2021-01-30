@@ -4,7 +4,13 @@ hicpileup generates HIC pileups around a BED file features
 
 ## Dependencies
 
+All dependencies to run the script  can be downloaded using conda: 
 
+```
+conda create -n pileupenv -c bioconda cooltools numpy cython
+conda activate pileupenv
+./hicpileup.py -h
+```
 
 ## Usage
 

@@ -35,6 +35,10 @@ def parse_args():
                         required=True)
     parser.add_argument("-t", "--threads", help="threads for processing pool",
                         required=False, default=5, type=int)
+    parser.add_argument("-nr", "--nrows", help="number of rows for the plot grid",
+                        required=False, default=1, type=int)
+    parser.add_argument("-nc", "--ncols", help="number of colums for the plot grid",
+                        required=False, default=1, type=int)
     return parser.parse_args()
 
 
@@ -135,7 +139,8 @@ def main():
 
     flank = 1000000
     gs = GridSpec(nrows=1, ncols=len(conditions) +
-                  1, width_ratios=[20] * len(conditions) + [2])
+                  1, width_ratios=[20] * len(conditions) + [2]) 
+    gs.update(wspace=0.25)
     plt.figure(figsize=(5 * len(conditions), 5))
 
     opts = dict(
