@@ -1,13 +1,13 @@
 # hicpileup
 
-hicpileup generates HIC pileups around a BED file features
+hicpileup plots the observed/expected HIC signal piled up around a BED file of features
 
 ## Dependencies
 
 All dependencies to run the script  can be downloaded using conda: 
 
 ```
-conda create -n pileupenv -c bioconda cooltools numpy cython
+conda create -n pileupenv -c bioconda cooltools numpy cython bioframe
 conda activate pileupenv
 ./hicpileup.py -h
 ```
