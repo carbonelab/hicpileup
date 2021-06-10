@@ -18,7 +18,7 @@ conda activate pileupenv
 $ ./hicpileup.py
 usage: hicpileup.py [-h] -c COOLER -cs CSIZES -fs [FEATURES [FEATURES ...]]
                     -fn [FEATURENAMES [FEATURENAMES ...]] -of OUTFILE
-                    [-t THREADS]
+                    [-bs BINSIZE] [-t THREADS]
 
 Create HIC pileups around regions to aggregate
 
@@ -34,6 +34,8 @@ optional arguments:
                         names for each feature file, used as plot labels
   -of OUTFILE, --outfile OUTFILE
                         output figure name
+  -bs BINSIZE, --binsize BINSIZE
+                        cooler binsize
   -t THREADS, --threads THREADS
                         threads for processing pool
 ```
