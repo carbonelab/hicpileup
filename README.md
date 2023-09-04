@@ -1,6 +1,6 @@
 # hicpileup
 
-hicpileup plots the observed/expected HIC signal piled up around a BED file of features
+hicpileup uses [https://github.com/open2c/cooler] to plot the observed/expected HIC signal piled up around a BED file of features
 
 ## Dependencies
 
